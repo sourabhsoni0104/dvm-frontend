@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage your team's work, projects, & tasks online • Asana</title>
+    <link rel="icon" type="image/png" href="./images/asana_favicon.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header id="site-header">
+      <nav class="nav-bar">
+      
+        <a href="./index.html" class="logo">
+          <img src="./images/asana_logo.png" height="56" width="112">
+        </a>
+      
+        <div class="nav-items">
+          <button class="nav-trigger" data-panel="product">
+            Product
+            <svg class="chevron" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="nav-trigger" data-panel="solutions">
+            Solutions
+            <svg class="chevron" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="nav-trigger" data-panel="learn">
+            Learning &amp; support
+            <svg class="chevron" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <a href="https://asana.com/pricing" class="nav-pricing">Pricing</a>
+        </div>
+      
+        <div class="nav-right">
+          <button class="btn-icon" title="Language">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </button>
+          <button class="btn-ghost"><a href="https://asana.com/sales">Contact sales</a></button>
+          <button class="btn-ghost"><a href="https://app.asana.com/-/login?_gl=1*zma3s9*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NjE1MDYkbzM0JGcxJHQxNzcxNTYyMzg4JGo0MiRsMCRoMTg4ODMyMDY5OQ..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA..">Log in</a></button>
+          <button class="btn-cta"><a href="https://asana.com/create-account">Get started</a></button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      
+      </nav>
+    
+      <div class="dropdown-shell" id="dropdown-shell">
+      
+        <div class="dropdown-panel" id="panel-product">
+          <div class="panel-cols panel-cols-4">
+            <div class="panel-col">
+              <div class="col-label">Platform</div>
+              <a href="https://asana.com/product" class="col-link">Product overview</a>
+              <a href="https://asana.com/features" class="col-link">All features</a>
+              <a href="https://asana.com/apps" class="col-link">App integrations</a>
+              <a href="https://asana.com/whats-new" class="col-link">Latest feature release</a>
+            </div>
+            <div class="panel-col">
+              <div class="col-label">Capabilities</div>
+              <a href="https://asana.com/features/project-management" class="col-link">Project management</a>
+              <a href="https://asana.com/features/workflow-automation" class="col-link">Workflows and automation</a>
+              <a href="https://asana.com/features/goals-reporting" class="col-link">Goals and reporting</a>
+              <a href="https://asana.com/features/resource-management" class="col-link">Resource management</a>
+              <a href="https://asana.com/features/admin-security/" class="col-link">Admin and security</a>
+            </div>
+            <div class="panel-col">
+              <div class="col-label">Asana AI</div>
+              <a href="https://asana.com/product/ai" class="col-link">Asana AI</a>
+              <a href="https://asana.com/product/ai/ai-studio" class="col-link">AI Studio</a>
+              <a href="https://asana.com/product/ai/ai-teammates" class="col-link">AI Teammates</a>
+              <a href="https://asana.com/product/ai/smart-assists" class="col-link">Smart assists</a>
+            </div>
+            <div class="panel-col">
+              <div class="col-label">Plans</div>
+              <a href="https://asana.com/plan/personal" class="col-link">Personal</a>
+              <a href="https://asana.com/plan/starter" class="col-link">Starter</a>
+              <a href="https://asana.com/plan/advanced" class="col-link">Advanced</a>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <a href="https://asana.com/sales">Contact sales</a>
+            <div class="sep"></div>
+            <a href="https://asana.com/demo/main">View demo</a>
+            <div class="sep"></div>
+            <a href="https://asana.com/download">Download app</a>
+          </div>
+        </div>
+      
+        <div class="dropdown-panel" id="panel-solutions">
+          <div class="panel-cols panel-cols-4">
+            <div class="panel-col">
+              <div class="col-label">Company Type</div>
+              <a href="https://asana.com/enterprise" class="col-link">Enterprise</a>
+              <a href="https://asana.com/small-business" class="col-link">Small business</a>
+              <a href="https://asana.com/industry/nonprofit" class="col-link">Nonprofit</a>
+              <a href="https://asana.com/startups" class="col-link">Startup</a>
+            </div>
+            <div class="panel-col">
+              <div class="col-label">Teams</div>
+              <a href="https://asana.com/teams/operations" class="col-link">Operations</a>
+              <a href="https://asana.com/teams/marketing" class="col-link">Marketing</a>
+              <a href="https://asana.com/teams/it" class="col-link">IT</a>
+              <a href="https://asana.com/teams/leaders" class="col-link">Leaders</a>
+            </div>
+            <div class="panel-col">
+              <div class="col-label">Industries</div>
+              <a href="https://asana.com/industry/government-solutions" class="col-link">Government</a>
+              <a href="https://asana.com/industry/healthcare" class="col-link">Healthcare</a>
+              <a href="https://asana.com/industry/retail" class="col-link">Retail</a>
+              <a href="https://asana.com/industry/financial-services" class="col-link">Financial services</a>
+              <a href="https://asana.com/industry/education" class="col-link">Education</a>
+              <a href="https://asana.com/industry/manufacturing" class="col-link">Manufacturing</a>
+            </div>
+            <div class="panel-col">
+              <div class="col-label">Use Cases</div>
+              <a href="https://asana.com/uses/goal-management" class="col-link">Goal management</a>
+              <a href="https://asana.com/uses/organizational-planning" class="col-link">Organizational planning</a>
+              <a href="https://asana.com/uses/project-intake" class="col-link">Project intake</a>
+              <a href="https://asana.com/uses/resource-planning" class="col-link">Resource planning</a>
+              <a href="https://asana.com/uses/product-launch" class="col-link">Product launches</a>
+              <a href="https://asana.com/uses" class="col-link">View all use cases →</a>
+            </div>
+            <div class="panel-footer">
+            <a href="https://asana.com/sales">Contact sales</a>
+            <div class="sep"></div>
+            <a href="https://asana.com/demo/main">View demo</a>
+            <div class="sep"></div>
+            <a href="https://asana.com/download">Download app</a>
+          </div>
+          </div>
+          </div>
+        </div>
+      
+        <div class="dropdown-panel" id="panel-learn">
+          <div class="panel-cols panel-cols-3">
+            <div class="panel-col">
+              <div class="col-label">Learn</div>
+              <a href="https://asana.com/resources" class="col-link">Resource center</a>
+              <a href="https://asana.com/events" class="col-link">Events and webinars</a>
+              <a href="https://asana.com/customers" class="col-link">Customer stories</a>
+              <a href="https://academy.asana.com/?_gl=1*cltj0r*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NjE1MDYkbzM0JGcxJHQxNzcxNTYzNTYxJGo2MCRsMCRoMTc4ODAxMjU2Nw..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA.." class="col-link">Asana Academy</a>
+              <a href="https://asana.com/certifications" class="col-link">Certifications</a>
+              <a href="https://academy.asana.com/page/upcoming-live-trainings?_gl=1*cltj0r*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NjE1MDYkbzM0JGcxJHQxNzcxNTYzNTYxJGo2MCRsMCRoMTc4ODAxMjU2Nw..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA.." class="col-link">Trainings</a>
+            </div>
+            <div class="panel-col">
+              <div class="col-label">Support</div>
+              <a href="https://help.asana.com/?_gl=1*1snozf*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NjE1MDYkbzM0JGcxJHQxNzcxNTYzNTYxJGo2MCRsMCRoMTc4ODAxMjU2Nw..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA.." class="col-link">Help Center</a>
+              <a href="https://forum.asana.com/?_gl=1*1snozf*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NjE1MDYkbzM0JGcxJHQxNzcxNTYzNTYxJGo2MCRsMCRoMTc4ODAxMjU2Nw..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA.." class="col-link">Community</a>
+              <a href="https://asana.com/templates" class="col-link">Templates</a>
+              <a href="https://asana.com/developers" class="col-link">Developers</a>
+            </div>
+            <div class="panel-col">
+              <div class="col-label">Services</div>
+              <a href="https://asana.com/customer-success" class="col-link">Customer Success</a>
+              <a href="https://asana.com/partners/channel/directory" class="col-link">Find a partner</a>
+              <a href="https://asana.com/partners" class="col-link">Become a partner</a>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <a href="https://asana.com/sales">Contact sales</a>
+            <div class="sep"></div>
+            <a href="https://asana.com/demo/main">View demo</a>
+            <div class="sep"></div>
+            <a href="https://asana.com/download">Download app</a>
+          </div>
+        </div>
+      
+      </div>
+    </header>
+
+    <div class="backdrop" id="backdrop"></div>
+
+    <div class="mobile-menu" id="mobile-menu">
+    
+      <div class="mob-item" id="mob-product">
+        <button class="mob-trigger" data-mob="mob-product">
+          Product
+          <svg class="chevron" width="12" height="8" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mob-sub">
+          <div class="mob-section">
+            <div class="mob-section-label">Platform</div>
+            <a href="https://asana.com/product" class="mob-link">Product overview</a>
+            <a href="https://asana.com/features" class="mob-link">All features</a>
+            <a href="https://asana.com/apps" class="mob-link">App integrations</a>
+            <a href="https://asana.com/whats-new" class="mob-link">Latest feature release</a>
+          </div>
+          <div class="mob-section">
+            <div class="mob-section-label">Capabilities</div>
+            <a href="https://asana.com/features/project-management" class="mob-link">Project management</a>
+            <a href="https://asana.com/features/workflow-automation" class="mob-link">Workflows and automation</a>
+            <a href="https://asana.com/features/goals-reporting" class="mob-link">Goals and reporting</a>
+            <a href="https://asana.com/features/resource-management" class="mob-link">Resource management</a>
+            <a href="https://asana.com/features/admin-security/" class="mob-link">Admin and security</a>
+          </div>
+          <div class="mob-section">
+            <div class="mob-section-label">Asana AI</div>
+            <a href="https://asana.com/product/ai" class="mob-link">Asana AI</a>
+            <a href="https://asana.com/product/ai/ai-studio" class="mob-link">AI Studio</a>
+            <a href="https://asana.com/product/ai/ai-teammates" class="mob-link">AI Teammates</a>
+            <a href="https://asana.com/product/ai/smart-assists" class="mob-link">Smart assists</a>
+          </div>
+          <div class="mob-section">
+            <div class="mob-section-label">Plans</div>
+            <a href="https://asana.com/plan/personal" class="mob-link">Personal</a>
+            <a href="https://asana.com/plan/starter" class="mob-link">Starter</a>
+            <a href="https://asana.com/plan/advanced" class="mob-link">Advanced</a>
+          </div>
+          <div class="mob-section">
+            <a href="https://asana.com/sales" class="mob-link">Contact sales</a>
+            <a href="hhttps://asana.com/demo/main" class="mob-link">View demo</a>
+            <a href="https://asana.com/download" class="mob-link">Download app</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="mob-item" id="mob-solutions">
+        <button class="mob-trigger" data-mob="mob-solutions">
+          Solutions
+          <svg class="chevron" width="12" height="8" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mob-sub">
+          <div class="mob-section">
+            <div class="mob-section-label">Company Type</div>
+            <a href="https://asana.com/enterprise" class="mob-link">Enterprise</a>
+            <a href="https://asana.com/small-business" class="mob-link">Small business</a>
+            <a href="https://asana.com/industry/nonprofit" class="mob-link">Nonprofit</a>
+            <a href="https://asana.com/startups" class="mob-link">Startup</a>
+          </div>
+          <div class="mob-section">
+            <div class="mob-section-label">Teams</div>
+            <a href="https://asana.com/teams/operations" class="mob-link">Operations</a>
+            <a href="https://asana.com/teams/marketing" class="mob-link">Marketing</a>
+            <a href="https://asana.com/teams/it" class="mob-link">IT</a>
+            <a href="https://asana.com/teams/leaders" class="mob-link">Leaders</a>
+          </div>
+          <div class="mob-section">
+            <div class="mob-section-label">Industries</div>
+            <a href="https://asana.com/industry/government-solutions" class="mob-link">Government</a>
+            <a href="https://asana.com/industry/healthcare" class="mob-link">Healthcare</a>
+            <a href="https://asana.com/industry/retail" class="mob-link">Retail</a>
+            <a href="https://asana.com/industry/financial-services" class="mob-link">Financial services</a>
+            <a href="https://asana.com/industry/education" class="mob-link">Education</a>
+            <a href="https://asana.com/industry/manufacturing" class="mob-link">Manufacturing</a>
+          </div>
+          <div class="mob-section">
+            <div class="mob-section-label">Use Cases</div>
+              <a href="https://asana.com/uses/goal-management" class="mob-link">Goal management</a>
+              <a href="https://asana.com/uses/organizational-planning" class="mob-link">Organizational planning</a>
+              <a href="https://asana.com/uses/project-intake" class="mob-link">Project intake</a>
+              <a href="https://asana.com/uses/resource-planning" class="mob-link">Resource planning</a>
+              <a href="https://asana.com/uses/product-launch" class="mob-link">Product launches</a>
+              <a href="https://asana.com/uses" class="mob-link">View all use cases →</a>
+          </div>
+          <div class="mob-section">
+            <a href="https://asana.com/sales" class="mob-link">Contact sales</a>
+            <a href="hhttps://asana.com/demo/main" class="mob-link">View demo</a>
+            <a href="https://asana.com/download" class="mob-link">Download app</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="mob-item" id="mob-learn">
+        <button class="mob-trigger" data-mob="mob-learn">
+          Learning &amp; support
+          <svg class="chevron" width="12" height="8" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mob-sub">
+          <div class="mob-section">
+            <div class="mob-section-label">Learn</div>
+            <a href="https://asana.com/resources" class="mob-link">Resource center</a>
+            <a href="https://asana.com/events" class="mob-link">Events and webinars</a>
+            <a href="https://asana.com/customers" class="mob-link">Customer stories</a>
+            <a href="https://academy.asana.com/?_gl=1*1fjhz0t*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NjE1MDYkbzM0JGcxJHQxNzcxNTY0MzcwJGo2MCRsMCRoMTIwMjM2MDI1OQ..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA.." class="mob-link">Asana Academy</a>
+            <a href="https://asana.com/certifications" class="mob-link">Certifications</a>
+            <a href="https://academy.asana.com/page/upcoming-live-trainings?_gl=1*1fjhz0t*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NjE1MDYkbzM0JGcxJHQxNzcxNTY0MzcwJGo2MCRsMCRoMTIwMjM2MDI1OQ..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA.." class="mob-link">Trainings</a>
+          </div>
+          <div class="mob-section">
+            <div class="mob-section-label">Support</div>
+            <a href="https://help.asana.com/?_gl=1*1fjhz0t*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NjE1MDYkbzM0JGcxJHQxNzcxNTY0MzcwJGo2MCRsMCRoMTIwMjM2MDI1OQ..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA.." class="mob-link">Help Center</a>
+            <a href="https://forum.asana.com/?_gl=1*1kaodbs*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NjE1MDYkbzM0JGcxJHQxNzcxNTY0MzcwJGo2MCRsMCRoMTIwMjM2MDI1OQ..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA.." class="mob-link">Community</a>
+            <a href="https://asana.com/templates" class="mob-link">Templates</a>
+            <a href="https://asana.com/developers" class="mob-link">Developers</a>
+          </div>
+          <div class="mob-section">
+            <div class="mob-section-label">Services</div>
+            <a href="https://asana.com/customer-success" class="mob-link">Customer Success</a>
+            <a href="https://asana.com/partners/channel/directory" class="mob-link">Find a partner</a>
+            <a href="https://asana.com/partners" class="mob-link">Become a partner</a>
+          </div>
+          <div class="mob-section">
+            <a href="https://asana.com/sales" class="mob-link">Contact sales</a>
+            <a href="hhttps://asana.com/demo/main" class="mob-link">View demo</a>
+            <a href="https://asana.com/download" class="mob-link">Download app</a>
+          </div>
+        </div>
+      </div>
+    
+      <a href="https://asana.com/pricing" class="mob-plain-link">Pricing</a>
+    
+      <div class="mob-actions">
+        <button class="mob-login"><a href="https://asana.com/sales">Contact sales</a></button>
+        <button class="mob-login"><a href="https://app.asana.com/-/login?_gl=1*1p225gp*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NjE1MDYkbzM0JGcxJHQxNzcxNTY0NDg5JGo1NyRsMCRoMTIwMjM2MDI1OQ..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA..">Log in</a></button>
+      </div>
+    
+    </div>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">All your work, all in one place</h1>
+        <p class="hero-subtitle">Bring people and AI together to plan, track, and deliver work faster.</p>
+        <div class="hero-cta">
+          <a href="https://asana.com/create-account" class="btn-primary">Get started</a>
+          <a href="https://asana.com/demo/main" class="btn-secondary">View demo</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./images/main_img.png" alt="Asana product dashboard" />
+      </div>
+    </section>
+
+    <section class="logos-section">
+    
+      <div class="logos-strip">
+        <p class="logos-headline"><strong>85% of Fortune 100 <br> companies choose Asana<sup>1</sup></strong></p>
+        <img src="./images/amazon.png" alt="Amazon" />
+        <img src="./images/accenture.png" alt="Accenture" />
+        <img src="./images/JJ.png" alt="Johnson & Johnson" />
+        <img src="./images/dell.png" alt="Dell" />
+        <img src="./images/merck.png" alt="Merck" />
+      </div>
+    </section>
+
+    <section class="coral-section">
+    
+      <section class="coral-section-top">
+        <h1>Make 2026 your most productive year yet</h1>
+        <p>Get the new year off to a fast start. Discover how to set effective goals in Asana—and learn how AI can help you achieve them.</p>
+        <a href="https://asana.com/create-account?utm_medium=website&utm_source=web_banner&utm_content=inlinebanner&utm_campaign=nye26" class="btn-coral-section">Get started</a>
+      </section>
+    
+      <section class="coral-section-cards-wrapper">
+        <div class="coral-section-cards-grid">
+        
+          <div class="coral-section-card">
+            <div class="coral-section-card-icon">
+              <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol" aria-labelledby="goal-icon-title-id" aria-hidden="false" color="var(--icon)" class="css-pfo72i e1bpwjla1">
+                <title id="goal-icon-title-id">goal icon</title>
+                <path d="M14.8417 13.2322L11.7917 8.53223C12.5417 7.68223 12.9917 6.53223 12.9917 5.28223C12.9917 2.53223 10.7417 0.282227 7.99167 0.282227C5.24167 0.332227 2.99167 2.58223 2.99167 5.33223C2.99167 6.58223 3.44167 7.68223 4.19167 8.58223L1.14167 13.2822C0.741673 13.8822 0.691673 14.6822 1.04167 15.3322C1.39167 15.9822 2.04167 16.3822 2.79167 16.3822H13.1917C13.9417 16.3822 14.5917 15.9822 14.9417 15.3322C15.2917 14.6322 15.2917 13.8822 14.8417 13.2322ZM3.99167 5.33223C3.99167 3.13223 5.79167 1.33223 7.99167 1.33223C10.1917 1.33223 11.9917 3.13223 11.9917 5.33223C11.9917 6.23223 11.6917 7.03223 11.2417 7.68223L9.69167 5.28223C9.34167 4.73223 8.69167 4.38223 8.04167 4.38223C7.34167 4.38223 6.74167 4.73223 6.39167 5.28223L4.84167 7.68223C4.29167 7.03223 3.99167 6.23223 3.99167 5.33223ZM10.5417 8.43223C9.84167 8.98223 8.94167 9.33223 7.99167 9.33223C7.04167 9.33223 6.14167 8.98223 5.44167 8.43223L7.14167 5.83223C7.34167 5.53223 7.64167 5.38223 7.99167 5.38223C8.34167 5.38223 8.64167 5.53223 8.84167 5.83223L10.5417 8.43223ZM14.0917 14.8322C13.8917 15.1822 13.5917 15.3322 13.1917 15.3322H2.79167C2.44167 15.3322 2.09167 15.1322 1.89167 14.8322C1.69167 14.4822 1.74167 14.1322 1.94167 13.8322L4.89167 9.33223C5.74167 9.98223 6.79167 10.3822 7.99167 10.3822C9.14167 10.3822 10.2417 9.98223 11.0917 9.33223L14.0417 13.8322C14.2417 14.0822 14.2417 14.4822 14.0917 14.8322Z">
+                </path>
+              </svg>
+            </div>
+            <h3>Goals</h3>
+            <p>Connect everyone's day-to-day work to your company's 2026 objectives.</p>
+            <a href="https://asana.com/features/goals-reporting/goals?utm_medium=website&utm_source=web_banner&utm_content=inlinebanner&utm_campaign=nye26" class="coral-section-card-link">
+              Learn more
+              <span class="coral-section-arrow-circle">
+                <svg viewBox="0 0 14 14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+              </span>
+            </a>
+          </div>
+        
+          <div class="coral-section-card">
+            <div class="coral-section-card-icon">
+              <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol" aria-labelledby="asana-intelligence-filled-icon-title-id" aria-hidden="false" color="var(--icon)" class="css-pfo72i e1bpwjla1">
+                <title id="asana-intelligence-filled-icon-title-id">asana-intelligence-filled icon</title>
+                <path d="M12.375 0H11.625C11.625 0.696193 11.3485 1.36387 10.8561 1.85615C10.3639 2.34844 9.6962 2.625 9 2.625V3.375C9.6962 3.375 10.3639 3.65156 10.8561 4.14385C11.3485 4.63613 11.625 5.30381 11.625 6H12.375C12.375 5.30381 12.6515 4.63613 13.1439 4.14385C13.6361 3.65156 14.3038 3.375 15 3.375V2.625C14.3038 2.625 13.6361 2.34844 13.1439 1.85615C12.6515 1.36387 12.375 0.696193 12.375 0ZM0 7.5C2.222 7.5 3.5 8.75 3.5 11H4.5C4.5 8.75 5.75 7.5 8 7.5V6.5C5.75 6.5 4.5 5.25 4.5 3H3.5C3.5 5.25 2.25 6.5 0 6.5V7.5ZM10.375 16C10.375 15.3038 10.6515 14.6361 11.1439 14.1439C11.6361 13.6515 12.3038 13.375 13 13.375V12.625C12.3038 12.625 11.6361 12.3485 11.1439 11.8561C10.6515 11.3639 10.375 10.6962 10.375 10H9.625C9.625 10.6962 9.34847 11.3639 8.85613 11.8561C8.36387 12.3485 7.6962 12.625 7 12.625V13.375C7.6962 13.375 8.36387 13.6515 8.85613 14.1439C9.34847 14.6361 9.625 15.3038 9.625 16H10.375Z">
+                </path>
+              </svg>
+            </div>
+            <h3>Smart Assists</h3>
+            <p>Boost productivity with AI that streamlines projects, tracks progress toward goals, and delivers insights.</p>
+            <a href="https://asana.com/product/ai/smart-assists?utm_medium=website&utm_source=web_banner&utm_content=inlinebanner&utm_campaign=nye26" class="coral-section-card-link">
+              Learn more
+              <span class="coral-section-arrow-circle">
+                <svg viewBox="0 0 14 14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+              </span>
+            </a>
+          </div>
+        
+          <div class="coral-section-card">
+            <div class="coral-section-card-icon">
+              <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol" aria-labelledby="workflow-icon-title-id" aria-hidden="false" color="var(--icon)" class="css-pfo72i e1bpwjla1">
+                <title id="workflow-icon-title-id">workflow icon</title>
+                <path d="M11.625 5.87256H13.625C14.45 5.87256 15.125 5.19756 15.125 4.37256V2.37256C15.125 1.54756 14.45 0.872559 13.625 0.872559H11.625C10.8 0.872559 10.125 1.54756 10.125 2.37256V2.87256H6.325C6.09 1.59256 4.97 0.622559 3.625 0.622559C2.11 0.622559 0.875 1.85756 0.875 3.37256C0.875 4.71756 1.845 5.83756 3.125 6.07256V9.87256H2.625C1.8 9.87256 1.125 10.5476 1.125 11.3726V13.3726C1.125 14.1976 1.8 14.8726 2.625 14.8726H4.625C5.45 14.8726 6.125 14.1976 6.125 13.3726V12.8726H13.425L11.77 14.5276C11.575 14.7226 11.575 15.0376 11.77 15.2326C11.87 15.3326 11.995 15.3776 12.125 15.3776C12.255 15.3776 12.38 15.3276 12.48 15.2326L14.98 12.7326C15.08 12.6326 15.125 12.5026 15.125 12.3776C15.125 12.3776 15.125 12.3776 15.125 12.3726C15.125 12.2226 15.055 12.0926 14.955 12.0026L12.47 9.51756C12.275 9.32256 11.96 9.32256 11.765 9.51756C11.57 9.71256 11.57 10.0276 11.765 10.2226L13.41 11.8726H6.125V11.3726C6.125 10.5476 5.45 9.87256 4.625 9.87256H4.125V6.07256C5.24 5.86756 6.12 4.98756 6.325 3.87256H10.125V4.37256C10.125 5.19756 10.8 5.87256 11.625 5.87256ZM11.125 2.37256C11.125 2.09756 11.35 1.87256 11.625 1.87256H13.625C13.9 1.87256 14.125 2.09756 14.125 2.37256V4.37256C14.125 4.64756 13.9 4.87256 13.625 4.87256H11.625C11.35 4.87256 11.125 4.64756 11.125 4.37256V2.37256ZM4.625 10.8726C4.9 10.8726 5.125 11.0976 5.125 11.3726V13.3726C5.125 13.6476 4.9 13.8726 4.625 13.8726H2.625C2.35 13.8726 2.125 13.6476 2.125 13.3726V11.3726C2.125 11.0976 2.35 10.8726 2.625 10.8726H4.625ZM3.625 5.12256C2.66 5.12256 1.875 4.33756 1.875 3.37256C1.875 2.40756 2.66 1.62256 3.625 1.62256C4.59 1.62256 5.375 2.40756 5.375 3.37256C5.375 4.33756 4.59 5.12256 3.625 5.12256Z">
+              </path>
+            </svg>
+            </div>
+            <h3>Template Gallery</h3>
+            <p>Get the year off to a fast start with AI-powered workflows tailored to your organization's processes.</p>
+            <a href="https://asana.com/product/ai?utm_medium=website&utm_source=web_banner&utm_content=inlinebanner&utm_campaign=nye26" class="coral-section-card-link">
+              Learn more
+              <span class="coral-section-arrow-circle">
+                <svg viewBox="0 0 14 14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+              </span>
+            </a>
+          </div>
+        
+          <div class="coral-section-card">
+            <div class="coral-section-card-icon">
+              <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol" aria-labelledby="asana-intelligence-filled-icon-title-id" aria-hidden="false" color="var(--icon)" class="css-pfo72i e1bpwjla1">
+                <title id="asana-intelligence-filled-icon-title-id">asana-intelligence-filled icon</title>
+                <path d="M12.375 0H11.625C11.625 0.696193 11.3485 1.36387 10.8561 1.85615C10.3639 2.34844 9.6962 2.625 9 2.625V3.375C9.6962 3.375 10.3639 3.65156 10.8561 4.14385C11.3485 4.63613 11.625 5.30381 11.625 6H12.375C12.375 5.30381 12.6515 4.63613 13.1439 4.14385C13.6361 3.65156 14.3038 3.375 15 3.375V2.625C14.3038 2.625 13.6361 2.34844 13.1439 1.85615C12.6515 1.36387 12.375 0.696193 12.375 0ZM0 7.5C2.222 7.5 3.5 8.75 3.5 11H4.5C4.5 8.75 5.75 7.5 8 7.5V6.5C5.75 6.5 4.5 5.25 4.5 3H3.5C3.5 5.25 2.25 6.5 0 6.5V7.5ZM10.375 16C10.375 15.3038 10.6515 14.6361 11.1439 14.1439C11.6361 13.6515 12.3038 13.375 13 13.375V12.625C12.3038 12.625 11.6361 12.3485 11.1439 11.8561C10.6515 11.3639 10.375 10.6962 10.375 10H9.625C9.625 10.6962 9.34847 11.3639 8.85613 11.8561C8.36387 12.3485 7.6962 12.625 7 12.625V13.375C7.6962 13.375 8.36387 13.6515 8.85613 14.1439C9.34847 14.6361 9.625 15.3038 9.625 16H10.375Z">
+                </path>
+              </svg>
+            </div>
+            <h3>Create projects with AI</h3>
+            <p>Describe your project goals and how you want work organized, and AI will start building your project.</p>
+            <a href="https://asana.com/create?utm_medium=website&utm_source=web_banner&utm_content=inlinebanner&utm_campaign=nye26" class="coral-section-card-link">
+              Try now
+              <span class="coral-section-arrow-circle">
+                <svg viewBox="0 0 14 14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+              </span>
+            </a>
+          </div>
+        
+        </div>
+      </section>
+    </section>
+
+    <section class="human-ai">
+      <section class="human-ai-section-wrapper">
+        <h1 class="human-ai-section-title">The platform for human + AI collaboration</h1>
+      
+        <div class="human-ai-card">
+        
+          <div class="human-ai-tabs" role="tablist">
+            <button class="human-ai-tab-btn active" role="tab" aria-selected="true"  data-tab="marketing">Marketing</button>
+            <button class="human-ai-tab-btn"        role="tab" aria-selected="false" data-tab="operations">Operations</button>
+            <button class="human-ai-tab-btn"        role="tab" aria-selected="false" data-tab="it">IT</button>
+            <button class="human-ai-tab-btn"        role="tab" aria-selected="false" data-tab="leadership">Leadership</button>
+          </div>
+        
+          <div class="human-ai-tab-panel active" id="panel-marketing">
+            <img class="human-ai-panel-image" src="./images/marketing.png" alt="Marketing - Asana AI platform"/>
+            <div class="human-ai-panel-text">
+              <h2 class="human-ai-panel-heading">Maximize campaign ROI</h2>
+              <ul class="human-ai-feature-list">
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Streamline campaign management
+                </li>
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Enhance creative production
+                </li>
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Manage events and editorial calendars
+                </li>
+              </ul>
+              <a href="https://asana.com/create-account" class="human-ai-cta-btn">Get started</a>
+            </div>
+          </div>
+        
+          <div class="human-ai-tab-panel" id="panel-operations">
+            <img class="human-ai-panel-image" src="./images/operations.png" alt="Operations - Asana AI platform"/>
+            <div class="human-ai-panel-text">
+              <h2 class="human-ai-panel-heading">Drive better outcomes</h2>
+              <ul class="human-ai-feature-list">
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Track work and see progress in real time
+                </li>
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Standardize and automate processes
+                </li>
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Unblock teams to hit revenue goals
+                </li>
+              </ul>
+              <a href="https://asana.com/create-account" class="human-ai-cta-btn">Get started</a>
+            </div>
+          </div>
+        
+          <div class="human-ai-tab-panel" id="panel-it">
+            <img class="human-ai-panel-image" src="./images/IT.png" alt="IT - Asana AI platform"/>
+            <div class="human-ai-panel-text">
+              <h2 class="human-ai-panel-heading">Prioritize and streamline IT requests</h2>
+              <ul class="human-ai-feature-list">
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Allocate resources more effectively
+                </li>
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Automate and scale your workflows
+                </li>
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Onboard and offboard employees
+                </li>
+              </ul>
+              <a href="https://asana.com/create-account" class="human-ai-cta-btn">Get started</a>
+            </div>
+          </div>
+        
+          <div class="human-ai-tab-panel" id="panel-leadership">
+            <img class="human-ai-panel-image" src="./images/leadership.png" alt="Leadership - Asana AI platform"/>
+            <div class="human-ai-panel-text">
+              <h2 class="human-ai-panel-heading">Drive team alignment and impact</h2>
+              <ul class="human-ai-feature-list">
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Connect work to company goals
+                </li>
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Automate workflows across departments
+                </li>
+                <li>
+                  <span class="human-ai-circle-check">
+                    <svg viewBox="0 0 10 10" fill="none"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Report on progress and address bottlenecks
+                </li>
+              </ul>
+              <a href="https://asana.com/create-account" class="human-ai-cta-btn">Get started</a>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+    </section>
+
+    <section class = "uc">
+      <section class="uc-section">
+      
+        <div class="uc-header">
+          <h2 class="uc-title">See how Asana keeps work moving across use cases</h2>
+          <div class="uc-arrows">
+            <button class="uc-arrow" id="uc-prev" aria-label="Previous">
+              <svg width="21" height="21" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol" aria-labelledby="scroll-carousel-back-title-id" aria-hidden="false" class="css-pfo72i e1bpwjla1">
+                <title id="scroll-carousel-back-title-id">Scroll carousel back</title>
+                <path d="M14.0123 7.23745H3.8123L7.5123 3.53745C7.8123 3.23745 7.8123 2.78745 7.5123 2.48745C7.2123 2.18745 6.7623 2.18745 6.4623 2.48745L1.4623 7.48745C1.1623 7.78745 1.1623 8.23745 1.4623 8.53745L6.4623 13.5375C6.6123 13.6875 6.8123 13.7375 7.0123 13.7375C7.2123 13.7375 7.4123 13.6875 7.5623 13.5375C7.86231 13.2375 7.86231 12.7875 7.5623 12.4875L3.8623 8.78745H14.0123C14.4123 8.78745 14.7623 8.43745 14.7623 8.03745C14.7623 7.63745 14.4123 7.23745 14.0123 7.23745Z">
+                </path>
+              </svg>
+            </button>
+            <button class="uc-arrow" id="uc-next" aria-label="Next">
+              <svg width="21" height="21" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol" aria-labelledby="scroll-carousel-forward-title-id" aria-hidden="false" class="css-pfo72i e1bpwjla1">
+                <title id="scroll-carousel-forward-title-id">Scroll carousel forward</title>
+                <path fill="currentColor" d="M1.9877 7.23745H12.1877L8.4877 3.53745C8.1877 3.23745 8.1877 2.78745 8.4877 2.48745C8.7877 2.18745 9.2377 2.18745 9.5377 2.48745L14.5377 7.48745C14.8377 7.78745 14.8377 8.23745 14.5377 8.53745L9.5377 13.5375C9.3877 13.6875 9.1877 13.7375 8.9877 13.7375C8.7877 13.7375 8.5877 13.6875 8.4377 13.5375C8.13769 13.2375 8.13769 12.7875 8.4377 12.4875L12.1377 8.78745H1.9877C1.5877 8.78745 1.2377 8.43745 1.2377 8.03745C1.2377 7.63745 1.5877 7.23745 1.9877 7.23745Z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      
+        <div class="uc-outer">
+          <div class="uc-inner">
+            <div class="uc-track" id="uc-track">
+            
+              <div class="uc-card">
+                <img class="uc-card-img" src="./images/campaign_management.png" alt="Campaign Management"/>
+                <div class="uc-card-title">Campaign management</div>
+                <div class="uc-card-desc">Plan, track, and complete your campaigns all in one place.</div>
+                <a href="https://asana.com/uses/campaign-management" class="uc-card-link">
+                  See campaign management
+                  <span class="uc-link-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="6" x2="10" y2="6"/><polyline points="6,2 10,6 6,10"/></svg></span>
+                </a>
+              </div>
+            
+              <div class="uc-card">
+                <img class="uc-card-img" src="./images/creative_production.png" alt="Creative Production"/>
+                <div class="uc-card-title">Creative production</div>
+                <div class="uc-card-desc">Accelerate creative work by automating workflows from start to finish.</div>
+                <a href="https://asana.com/uses/creative-production" class="uc-card-link">
+                  See creative production
+                  <span class="uc-link-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="6" x2="10" y2="6"/><polyline points="6,2 10,6 6,10"/></svg></span>
+                </a>
+              </div>
+            
+              <div class="uc-card">
+                <img class="uc-card-img" src="./images/project_intake.png" alt="Project Intake"/>
+                <div class="uc-card-title">Project intake</div>
+                <div class="uc-card-desc">Capture, prioritize, and assign requests automatically so your teams have more time to work.</div>
+                <a href="https://asana.com/uses/project-intake" class="uc-card-link">
+                  See project intake
+                  <span class="uc-link-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="6" x2="10" y2="6"/><polyline points="6,2 10,6 6,10"/></svg></span>
+                </a>
+              </div>
+            
+              <div class="uc-card">
+                <img class="uc-card-img" src="./images/product_launches.png" alt="Product Launches"/>
+                <div class="uc-card-title">Product launches</div>
+                <div class="uc-card-desc">Coordinate teams, tasks, and timelines to keep every launch on schedule.</div>
+                <a href="https://asana.com/uses/product-launch" class="uc-card-link">
+                  See project launches
+                  <span class="uc-link-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="6" x2="10" y2="6"/><polyline points="6,2 10,6 6,10"/></svg></span>
+                </a>
+              </div>
+            
+              <div class="uc-card">
+                <img class="uc-card-img" src="./images/organizational_planning.png" alt="Organizational Planning"/>
+                <div class="uc-card-title">Organizational planning</div>
+                <div class="uc-card-desc">Address business needs quickly by analyzing progress, bandwidth, and blockers on one platform.</div>
+                <a href="https://asana.com/uses/strategic-planning" class="uc-card-link">
+                  See organizational planning
+                  <span class="uc-link-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="6" x2="10" y2="6"/><polyline points="6,2 10,6 6,10"/></svg></span>
+                </a>
+              </div>
+            
+              <div class="uc-card">
+                <img class="uc-card-img" src="./images/resource_planning.png" alt="Resource Planning"/>
+                <div class="uc-card-title">Resource planning</div>
+                <div class="uc-card-desc">Visualize how teams are staffed and what resources are available across your business.</div>
+                <a href="https://asana.com/uses/resource-planning" class="uc-card-link">
+                  See resource planning
+                  <span class="uc-link-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="6" x2="10" y2="6"/><polyline points="6,2 10,6 6,10"/></svg></span>
+                </a>
+              </div>
+            
+              <div class="uc-card">
+                <img class="uc-card-img" src="./images/goal_management.png" alt="Goal Management"/>
+                <div class="uc-card-title">Goal management</div>
+                <div class="uc-card-desc">Connect everyone's work to the organizational goals they support.</div>
+                <a href="https://asana.com/uses/goal-management" class="uc-card-link">
+                  See goal management
+                  <span class="uc-link-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="6" x2="10" y2="6"/><polyline points="6,2 10,6 6,10"/></svg></span>
+                </a>
+              </div>
+            
+              <div class="uc-card">
+                <img class="uc-card-img" src="./images/employee_onboarding.png" alt="Employee Onboarding"/>
+                <div class="uc-card-title">Employee onboarding</div>
+                <div class="uc-card-desc">Standardize onboarding to help new employees make an impact quickly.</div>
+                <a href="https://asana.com/uses/employee-onboarding" class="uc-card-link">
+                  See employee onboarding
+                  <span class="uc-link-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="6" x2="10" y2="6"/><polyline points="6,2 10,6 6,10"/></svg></span>
+                </a>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      
+      </section>
+    </section>
+
+    <div class="asana-gov-banner">
+      <div class="asana-gov-logo-block">
+        <img src="./images/asana_gov.png" alt="Asana Gov logo"/>
+      </div>
+    
+      <div class="asana-gov-text">
+        <h3>Stay secure and compliant with Asana Gov</h3>
+        <p>Asana Gov empowers government agencies to coordinate critical work—from strategic planning to rapid response—on a platform that's easy to implement, scales seamlessly, and meets your compliance needs.</p>
+      </div>
+    
+      <a href="https://asana.com/product/asana-gov" class="asana-gov-cta">Check out Asana Gov</a>
+    </div>
+
+    <div class="asana-integrations">
+      <h2 class="asana-integrations-title">Connect over 300+ <br> integrations</h2>
+    
+      <div class="asana-integrations-right">
+        <p class="asana-integrations-desc">Asana connects with the enterprise tools your organization already uses, right out of the box.</p>
+        <a href="https://asana.com/apps" class="asana-integrations-cta">See all integrations</a>
+      </div>
+    </div>
+
+    <div class="customers-marquee-section">
+    
+      <div class="customers-marquee-row">
+        <div class="customers-marquee-track">
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/46e228ae7dab2f0f/original/Slack.svg"            alt="Slack"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/571bde6a0b10b80b/original/Zendesk.svg"          alt="Zendesk"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/49baba0ab294b013/original/Tableau.svg"          alt="Tableau"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/1eac689324ddc14c/original/Microsoft.svg"        alt="Microsoft"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/717f7eae038a9050/original/Microsoft-Teams.svg"  alt="Microsoft Teams"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/150594e58876e038/original/Google-Drive.svg"     alt="Google Drive"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/324ec5d49800849d/original/Salesforce.svg"       alt="Salesforce"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/4e953904d53c54e/original/Microsoft-Outlook.svg" alt="Outlook"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/3af9c9731a7fe964/original/Figma.svg"            alt="Figma"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/328185a11df7a023/original/Okta.svg"             alt="Okta"/></div>
+        </div>
+        <div class="customers-marquee-track" aria-hidden="true">
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/46e228ae7dab2f0f/original/Slack.svg"            alt="Slack"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/571bde6a0b10b80b/original/Zendesk.svg"          alt="Zendesk"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/49baba0ab294b013/original/Tableau.svg"          alt="Tableau"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/1eac689324ddc14c/original/Microsoft.svg"        alt="Microsoft"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/717f7eae038a9050/original/Microsoft-Teams.svg"  alt="Microsoft Teams"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/150594e58876e038/original/Google-Drive.svg"     alt="Google Drive"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/324ec5d49800849d/original/Salesforce.svg"       alt="Salesforce"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/4e953904d53c54e/original/Microsoft-Outlook.svg" alt="Outlook"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/3af9c9731a7fe964/original/Figma.svg"            alt="Figma"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/328185a11df7a023/original/Okta.svg"             alt="Okta"/></div>
+        </div>
+      </div>
+    
+      <div class="customers-marquee-row">
+        <div class="customers-marquee-track">
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/4ad2f1746d10b000/original/Vimeo.svg"            alt="Vimeo"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/1d7a9d3a9aa4ebd1/original/Nightfall.svg"        alt="Nightfall"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/1eac689324ddc14c/original/Microsoft.svg"        alt="Microsoft"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/1adb7fc8783c433/original/Pagerduty.svg"         alt="PagerDuty"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/7c2fced93846068b/original/ServiceNow.svg"       alt="ServiceNow"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/3f9aeea58da0f892/original/logo-app-Twilio.svg"  alt="Twilio"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/46e228ae7dab2f0f/original/Slack.svg"            alt="Slack"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/324ec5d49800849d/original/Salesforce.svg"       alt="Salesforce"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/150594e58876e038/original/Google-Drive.svg"     alt="Google Drive"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/49baba0ab294b013/original/Tableau.svg"          alt="Tableau"/></div>
+        </div>
+        <div class="customers-marquee-track" aria-hidden="true">
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/4ad2f1746d10b000/original/Vimeo.svg"            alt="Vimeo"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/1d7a9d3a9aa4ebd1/original/Nightfall.svg"        alt="Nightfall"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/1eac689324ddc14c/original/Microsoft.svg"        alt="Microsoft"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/1adb7fc8783c433/original/Pagerduty.svg"         alt="PagerDuty"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/7c2fced93846068b/original/ServiceNow.svg"       alt="ServiceNow"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/3f9aeea58da0f892/original/logo-app-Twilio.svg"  alt="Twilio"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/46e228ae7dab2f0f/original/Slack.svg"            alt="Slack"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/324ec5d49800849d/original/Salesforce.svg"       alt="Salesforce"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/150594e58876e038/original/Google-Drive.svg"     alt="Google Drive"/></div>
+          <div class="customers-marquee-card"><img src="https://assets.asana.biz/m/49baba0ab294b013/original/Tableau.svg"          alt="Tableau"/></div>
+        </div>
+      </div>
+    
+    </div>
+
+    <section class="trust-section">
+    
+      <div class="trust-top">
+        <div>
+          <h2 class="trust-title">The world's top companies trust Asana</h2>
+          <br/>
+          <a href="https://asana.com/customers" class="trust-studies-btn">See all case studies</a>
+        </div>
+      </div>
+    
+      <div class="trust-arrows">
+        <button class="trust-arrow inactive" id="trust-prev" aria-label="Previous">
+          <svg width="21" height="21" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol" aria-labelledby="scroll-carousel-back-title-id" aria-hidden="false" class="css-pfo72i e1bpwjla1">
+                <title id="scroll-carousel-back-title-id">Scroll carousel back</title>
+                <path d="M14.0123 7.23745H3.8123L7.5123 3.53745C7.8123 3.23745 7.8123 2.78745 7.5123 2.48745C7.2123 2.18745 6.7623 2.18745 6.4623 2.48745L1.4623 7.48745C1.1623 7.78745 1.1623 8.23745 1.4623 8.53745L6.4623 13.5375C6.6123 13.6875 6.8123 13.7375 7.0123 13.7375C7.2123 13.7375 7.4123 13.6875 7.5623 13.5375C7.86231 13.2375 7.86231 12.7875 7.5623 12.4875L3.8623 8.78745H14.0123C14.4123 8.78745 14.7623 8.43745 14.7623 8.03745C14.7623 7.63745 14.4123 7.23745 14.0123 7.23745Z">
+                </path>
+          </svg>
+        </button>
+        <button class="trust-arrow active" id="trust-next" aria-label="Next">
+          <svg width="21" height="21" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol" aria-labelledby="scroll-carousel-forward-title-id" aria-hidden="false" class="css-pfo72i e1bpwjla1">
+                <title id="scroll-carousel-forward-title-id">Scroll carousel forward</title>
+                <path fill="currentColor" d="M1.9877 7.23745H12.1877L8.4877 3.53745C8.1877 3.23745 8.1877 2.78745 8.4877 2.48745C8.7877 2.18745 9.2377 2.18745 9.5377 2.48745L14.5377 7.48745C14.8377 7.78745 14.8377 8.23745 14.5377 8.53745L9.5377 13.5375C9.3877 13.6875 9.1877 13.7375 8.9877 13.7375C8.7877 13.7375 8.5877 13.6875 8.4377 13.5375C8.13769 13.2375 8.13769 12.7875 8.4377 12.4875L12.1377 8.78745H1.9877C1.5877 8.78745 1.2377 8.43745 1.2377 8.03745C1.2377 7.63745 1.5877 7.23745 1.9877 7.23745Z">
+                </path>
+          </svg>
+        </button>
+      </div>
+    
+      <div class="trust-slider" id="trust-slider">
+      
+        <div class="trust-slide active" data-color="#dbeeff">
+          <div class="slide-left">
+            <img class="slide-logo" src="https://assets.asana.biz/m/37f23cc2d55080f/original/Danone_40px_quote.svg" alt="Danone"/>
+            <div class="slide-meta">
+              <div class="slide-meta-item">
+                <label>Company Size</label>
+                <span>Enterprise</span>
+              </div>
+              <div class="slide-meta-item">
+                <label>Industry</label>
+                <span>Food & hospitality</span>
+              </div>
+            </div>
+          </div>
+          <div class="slide-right">
+            <div>
+              <span class="slide-quote-mark">"</span>
+              <p class="slide-quote">Asana makes everything shareable, which saves us time executing programs because it's so much easier to replicate and learn from what others have done.</p>
+            </div>
+            <div class="slide-bottom">
+              <div>
+                <div class="slide-author-name">Simon Levinson</div>
+                <div class="slide-author-role">Global Digital Manufacturing Process Innovation Manager, Danone</div>
+              </div>
+              <a href="https://asana.com/case-study/danone" class="slide-read-btn">Read case study</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="trust-slide" data-color="#e8f5ee">
+          <div class="slide-left">
+            <img class="slide-logo" src="https://assets.asana.biz/m/3d37262e18853389/original/Kendo_40px_quote.svg" alt="Kendo"/>
+            <div class="slide-meta">
+              <div class="slide-meta-item">
+                <label>Company Size</label>
+                <span>Mid-market</span>
+              </div>
+              <div class="slide-meta-item">
+                <label>Industry</label>
+                <span>Retail & consumer goods</span>
+              </div>
+            </div>
+          </div>
+          <div class="slide-right">
+            <div>
+              <span class="slide-quote-mark">"</span>
+              <p class="slide-quote">To hit our ambitious growth target, we need to move fast. But we can't do it without clear processes that remove as many blockers as possible.</p>
+            </div>
+            <div class="slide-bottom">
+              <div>
+                <div class="slide-author-name">Romain Ehrhard</div>
+                <div class="slide-author-role">CIO, KENDO</div>
+              </div>
+              <a href="https://asana.com/case-study/kendo" class="slide-read-btn">Read case study</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="trust-slide" data-color="#fff0e6">
+          <div class="slide-left">
+            <img class="slide-logo" src="https://assets.asana.biz/m/4ba6a4053b35ae64/original/Spotify_40px_quote.svg" alt="Spotify"/>
+            <div class="slide-meta">
+              <div class="slide-meta-item">
+                <label>Company Size</label>
+                <span>Enterprise</span>
+              </div>
+              <div class="slide-meta-item">
+                <label>Industry</label>
+                <span>Technology</span>
+              </div>
+            </div>
+          </div>
+          <div class="slide-right">
+            <div>
+              <span class="slide-quote-mark">"</span>
+              <p class="slide-quote">Asana is our air traffic control. We have the visibility to scale production and support a higher number of ad campaigns to support our revenue goals.</p>
+            </div>
+            <div class="slide-bottom">
+              <div>
+                <div class="slide-author-name">Eugenia Contreras</div>
+                <div class="slide-author-role">Associate Manager, Spotify</div>
+              </div>
+              <a href="https://asana.com/case-study/spotify" class="slide-read-btn">Read case study</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="trust-slide" data-color="#f0ebff">
+          <div class="slide-left">
+            <img class="slide-logo" src="https://assets.asana.biz/m/713cc66c2f85095/original/Gannett_40px_quote.svg" alt="Gannett"/>
+            <div class="slide-meta">
+              <div class="slide-meta-item">
+                <label>Company Size</label>
+                <span>Enterprise</span>
+              </div>
+              <div class="slide-meta-item">
+                <label>Industry</label>
+                <span>Media & entertainment</span>
+              </div>
+            </div>
+          </div>
+          <div class="slide-right">
+            <div>
+              <span class="slide-quote-mark">"</span>
+              <p class="slide-quote">Having one centralized ecosystem that brings all doers and stakeholders together has really accelerated our understanding of the work we do and the speed in which we do it.</p>
+            </div>
+            <div class="slide-bottom">
+              <div>
+                <div class="slide-author-name">Steven Tai</div>
+                <div class="slide-author-role">Director, Marketing Operations, Gannett</div>
+              </div>
+              <a href="https://asana.com/case-study/gannett" class="slide-read-btn">Read case study</a>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    
+      <div class="trust-dots" id="trust-dots"></div>
+    
+    </section>
+
+    <section class="get-started-section">
+      <div class="get-started-inner">
+      
+        <div class="get-started-left">
+          <h2>Get started easily</h2>
+          <p>Tour the platform, read a few deep dives, or kickstart your work management journey with the right template.</p>
+        </div>
+      
+        <div class="get-started-cards">
+        
+          <a href="https://asana.com/demo/main" class="get-started-card">
+            <div class="get-started-card-text">
+              <h3>Try the Asana demo</h3>
+              <p>See Asana in action</p>
+            </div>
+            <span class="get-started-card-icon">
+              <svg viewBox="0 0 16 16"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
+            </span>
+          </a>
+        
+          <a href="https://asana.com/resources" class="get-started-card">
+            <div class="get-started-card-text">
+              <h3>Discover resources</h3>
+              <p>Help articles and tutorials</p>
+            </div>
+            <span class="get-started-card-icon">
+              <svg viewBox="0 0 16 16"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
+            </span>
+          </a>
+        
+          <a href="https://asana.com/templates" class="get-started-card">
+            <div class="get-started-card-text">
+              <h3>Start with a template</h3>
+              <p>Get started faster with a template</p>
+            </div>
+            <span class="get-started-card-icon">
+              <svg viewBox="0 0 16 16"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
+            </span>
+          </a>
+        
+        </div>
+      </div>
+    </section>
+
+    <section class="awards-section">
+    
+      <div class="award-card">
+        <div class="award-visual">
+          <img src="./images/award_1.png" alt="Forrester Wave Leader 2025 – Collaborative Work Management Tools" />
+        </div>
+        <div class="award-content">
+          <p class="award-title">A Leader in The Forrester Wave: Collaborative Work Management Tools 2025 Report</p>
+          <a class="award-link" href="https://asana.com/resources/forrester-wave-collaborative-work-management-2025">
+            Get the Report
+            <span class="award-arrow">
+              <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    
+      <div class="award-card">
+        <div class="award-visual">
+          <img src="./images/award_2.png" alt="2025 Gartner Magic Quadrant for Collaborative Work Management" />
+        </div>
+        <div class="award-content">
+          <p class="award-title">A Leader in the 2025 Gartner Magic Quadrant for Collaborative Work Management three years in a row</p>
+          <a class="award-link" href="https://asana.com/inside-asana/leader-in-2025-gartner-magic-quadrant-collaborative-work-management-report">
+            Learn more
+            <span class="award-arrow">
+              <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    
+      <div class="award-card">
+        <div class="award-visual">
+          <img src="./images/award_3.png" alt="G2 Best Software 2025 - Top 50 Project Management, Top 50 Small Business, Top 100 Best Software" />
+        </div>
+        <div class="award-content">
+          <p class="award-title">A leader in Work Management and OKR Software with more than 12,000 user reviews</p>
+          <a class="award-link" href="https://asana.com/inside-asana/leader-in-2025-gartner-magic-quadrant-collaborative-work-management-report">
+            Read user reviews
+            <span class="award-arrow">
+              <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    
+    </section>
+
+    <footer class="asana-footer-root">
+    
+      <div class="asana-footer-cta">
+        <h2 class="asana-footer-cta-heading">The only platform that can support your company at any scale</h2>
+        <a href="https://asana.com/create-account" class="asana-footer-cta-btn">Get started</a>
+      </div>
+    
+      <p class="asana-footer-footnote">1. Accurate as of December 2023, includes free and paid users.</p>
+    
+      <hr class="asana-footer-divider" />
+    
+      <div class="asana-footer-nav">
+      
+        <div class="asana-footer-logo">
+          <svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="23" cy="10" r="8" fill="#F06A6A"/>
+            <circle cx="12" cy="32" r="8" fill="#F06A6A"/>
+            <circle cx="34" cy="32" r="8" fill="#CE4040"/>
+          </svg>
+        </div>
+      
+        <div>
+          <p class="asana-footer-col-heading">New to Asana?</p>
+          <ul class="asana-footer-col-list">
+            <li><a href="https://asana.com/product">Product overview</a></li>
+            <li><a href="https://asana.com/features">All features</a></li>
+            <li><a href="https://asana.com/whats-new">Latest feature release</a></li>
+            <li><a href="https://asana.com/pricing">Pricing</a></li>
+            <li><a href="https://asana.com/plan/starter">Starter plan</a></li>
+            <li><a href="https://asana.com/plan/advanced">Advanced plan</a></li>
+            <li><a href="https://asana.com/enterprise">Enterprise</a></li>
+            <li><a href="https://asana.com/apps?category=all-apps">App integrations</a></li>
+            <li><a href="https://asana.com/product/ai">AI work management</a></li>
+            <li><a href="https://asana.com/resources/benefits-project-management">Project management</a></li>
+            <li><a href="https://asana.com/resources/resource-management-plan">Resource management</a></li>
+          </ul>
+        </div>
+      
+        <div>
+          <p class="asana-footer-col-heading">Use cases</p>
+          <ul class="asana-footer-col-list">
+            <li><a href="https://asana.com/uses/campaign-management">Campaign management</a></li>
+            <li><a href="https://asana.com/uses/content-calendar">Content calendar</a></li>
+            <li><a href="https://asana.com/uses/creative-production">Creative production</a></li>
+            <li><a href="https://asana.com/uses/goal-management">Goal management</a></li>
+            <li><a href="https://asana.com/uses/employee-onboarding">New hire onboarding</a></li>
+            <li><a href="/uses/organizational-planning">Organizational planning</a></li>
+            <li><a href="https://asana.com/uses/product-launch">Product launches</a></li>
+            <li><a href="https://asana.com/uses/resource-planning">Resource planning</a></li>
+            <li><a href="https://asana.com/uses/marketing-strategic-planning">Strategic planning</a></li>
+            <li><a href="https://asana.com/uses/project-intake">Project intake</a></li>
+            <li><a href="https://asana.com/uses">All use cases</a></li>
+          </ul>
+        </div>
+      
+        <div>
+          <p class="asana-footer-col-heading">Solutions</p>
+          <ul class="asana-footer-col-list">
+            <li><a href="https://asana.com/small-business">Small business</a></li>
+            <li><a href="https://asana.com/teams/marketing">Marketing</a></li>
+            <li><a href="https://asana.com/teams/operations">Operations</a></li>
+            <li><a href="https://asana.com/teams/it">IT</a></li>
+            <li><a href="https://asana.com/teams/product-managers">Product</a></li>
+            <li><a href="https://asana.com/teams/sales">Sales</a></li>
+            <li><a href="https://asana.com/industry/healthcare">Healthcare</a></li>
+            <li><a href="https://asana.com/industry/retail">Retail</a></li>
+            <li><a href="https://asana.com/industry/government-solutions">Government</a></li>
+            <li><a href="https://asana.com/industry/education">Education</a></li>
+            <li><a href="https://asana.com/industry/manufacturing">Manufacturing</a></li>
+            <li><a href="https://asana.com/industry/nonprofit">Nonprofits</a></li>
+            <li><a href="https://asana.com/startups">Startups</a></li>
+            <li><a href="https://asana.com/teams">All teams</a></li>
+          </ul>
+        </div>
+      
+        <div>
+          <p class="asana-footer-col-heading">Resources</p>
+          <ul class="asana-footer-col-list">
+            <li><a href="https://help.asana.com/s/?language=en_US&_gl=1*1esgd71*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NTE3ODgkbzMzJGcxJHQxNzcxNTU1MjY4JGo2MCRsMCRoMTQwNDc4ODMzNg..*_fplc*RlBvRVVaU01oTUJTS0N3dVNOazFMTkgza3Q2JTJCYThSeFZSV1d4c2FzR1FWbUclMkZOeGVmMko4aDZyaFc4MFdKZXV2R3VreloyQjJPZlhrblVHMFRHUE1YSDNkTFR3bllOUHJrak42bER5dm5ueW1DMUo4WHZGalMyTGZPTk9CZyUzRCUzRA..">Help Center</a></li>
+            <li><a href="https://help.asana.com/s/?_gl=1*1l9uj70*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NTE3ODgkbzMzJGcxJHQxNzcxNTU1MzIzJGo1JGwwJGgxNDA0Nzg4MzM2*_fplc*SG1aSjVWVk80QVREWTB3MHkzdzJ6Mkd6QlpYcFZjclB0ZVd1ZnlrRU0xbHRhZFRseE1OMTdEQ2NNSnBFZjhMTGZsUG1UekVDZEc4bW1tNXJmMmNSN1YyMENXJTJGQ1BmTFo3Wml3QUJkUjF1S0dNWDJEaERUY0Q5SUFMMk55aHclM0QlM0Q.#chat">Get support</a></li>
+            <li><a href="https://academy.asana.com/?_gl=1*1esgd71*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NTE3ODgkbzMzJGcxJHQxNzcxNTU1MjY4JGo2MCRsMCRoMTQwNDc4ODMzNg..*_fplc*RlBvRVVaU01oTUJTS0N3dVNOazFMTkgza3Q2JTJCYThSeFZSV1d4c2FzR1FWbUclMkZOeGVmMko4aDZyaFc4MFdKZXV2R3VreloyQjJPZlhrblVHMFRHUE1YSDNkTFR3bllOUHJrak42bER5dm5ueW1DMUo4WHZGalMyTGZPTk9CZyUzRCUzRA..">Asana Academy</a></li>
+            <li><a href="https://asana.com/certifications">Certifications</a></li>
+            <li><a href="https://forum.asana.com/?_gl=1*1esgd71*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NTE3ODgkbzMzJGcxJHQxNzcxNTU1MjY4JGo2MCRsMCRoMTQwNDc4ODMzNg..*_fplc*RlBvRVVaU01oTUJTS0N3dVNOazFMTkgza3Q2JTJCYThSeFZSV1d4c2FzR1FWbUclMkZOeGVmMko4aDZyaFc4MFdKZXV2R3VreloyQjJPZlhrblVHMFRHUE1YSDNkTFR3bllOUHJrak42bER5dm5ueW1DMUo4WHZGalMyTGZPTk9CZyUzRCUzRA..">Forum</a></li>
+            <li><a href="https://asana.com/resources/category/all">Resource center</a></li>
+            <li><a href="https://asana.com/events?regions=Americas">Events and webinars</a></li>
+            <li><a href="https://asana.com/templates">Project templates</a></li>
+            <li><a href="https://asana.com/customer-success">Customer Success</a></li>
+            <li><a href="https://developers.asana.com/docs/overview?_gl=1*rzcqn6*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NTE3ODgkbzMzJGcxJHQxNzcxNTU1Mjk5JGoyOSRsMCRoMTQ5MTk0MDMxNQ..*_fplc*MU83TXEzTU5nM0gySkNRTUJQeGlBampEMXBIZyUyRkx1NGV6RWxkV1prT0tLc2hxV2xkTDhPcHQyTDN0cjZsdTN4VE16dVBNTWNpNUIlMkJVTjVwMEN5Y05zZlQ0UzZPd2dWc1V2dUZrdkY2OEdVSElFTkNOZ2ZUaEZqM0drU1poQSUzRCUzRA..">Developers and API</a></li>
+            <li><a href="https://asana.com/partners">Partners</a></li>
+            <li><a href="https://asana.com/site-map">Sitemap</a></li>
+          </ul>
+        </div>
+      
+        <div>
+          <p class="asana-footer-col-heading">Company</p>
+          <ul class="asana-footer-col-list">
+            <li><a href="https://asana.com/company">About us</a></li>
+            <li><a href="https://asana.com/leadership">Leadership</a></li>
+            <li><a href="https://asana.com/customers">Customers</a></li>
+            <li><a href="https://asana.com/jobs">Careers</a></li>
+            <li><a href="https://asana.com/inside-asana">Inside Asana</a></li>
+            <li><a href="https://asana.com/culture-and-belonging">Culture</a></li>
+            <li><a href="https://asana.com/press">Press</a></li>
+            <li><a href="https://investors.asana.com/?_gl=1*1nkh7x8*_gcl_au*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*FPAU*MTAwMjAxNDQ1Ny4xNzcwODMzNzMy*_ga*MTk5NjE1MjQyNS4xNzcwODMzNzM1*_ga_J1KDXMCQTH*czE3NzE1NTE3ODgkbzMzJGcxJHQxNzcxNTU1MzY2JGo2MCRsMCRoMTQwNDc4ODMzNg..*_fplc*bTRiVW4yJTJCQmlaalFkODBHbyUyQlZCa2JqWE84a3NNNjQyeWpTSnAlMkJ0WVJURjVNJTJGMDMySUFNOHlENjU2QzNtVjJTbHJtRjhSWVByZm1yNnZNSmdqSE1NR0UlMkZTUHdjJTJGYSUyRmVLaFNOVFJQSiUyQkZURFY1cFBFYTZmVURHdTRieGRDZyUzRCUzRA..">Investor relations</a></li>
+            <li><a href="https://asana.com/trust">Trust and security</a></li>
+            <li><a href="https://asana.com/privacy">Privacy</a></li>
+            <li><a href="https://asana.com/terms/modern-slavery-statement">Supplier responsibility</a></li>
+            <li><a href="https://asana.com/esg/">Sustainability and ESG</a></li>
+          </ul>
+        </div>
+      
+      </div>
+    
+      <div class="asana-footer-bottom">
+      
+        <span class="asana-footer-copyright">© 2026 Asana, Inc.</span>
+      
+        <a href="https://asana.com/#i18n" class="asana-footer-lang">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          English
+        </a>
+      
+        <div class="asana-footer-socials">
+          <a href="https://twitter.com/asana" class="asana-footer-social-link" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.258 5.63 5.906-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://linkedin.com/company/asana" class="asana-footer-social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zm2-6a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+          </a>
+          <a href="https://instagram.com/asana" class="asana-footer-social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="#5c0832"/><circle cx="17.5" cy="6.5" r="1.5" fill="#5c0832"/></svg>
+          </a>
+          <a href="https://facebook.com/asana" class="asana-footer-social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://youtube.com/asana" class="asana-footer-social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#5c0832"/></svg>
+          </a>
+        </div>
+      
+        <div class="asana-footer-legal"><a href="https://asana.com/terms">Terms </a>& <a href="https://asana.com/terms/privacy-statement">Privacy</a></div>
+      
+        <div class="asana-footer-apps">
+          <a href="https://apps.apple.com/app/asana/id489969512" class="asana-footer-app-badge">
+            <img src="./images/app_store.png">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.asana.app" class="asana-footer-app-badge">
+            <img src="./images/google_play.png">
+          </a>
+        </div>
+      
+      </div>
+    
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
