@@ -1729,3 +1729,28 @@ header {
   gap: 10px;
   width: 300px;
 }
+.nav-right {
+  position: relative;
+}
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  padding: 8px 0;
+  min-width: 180px;
+  z-index: 999;
+}
+.lang-dropdown a {
+  display: block;
+  padding: 8px 20px;
+  color: #1e1e1e;
+  text-decoration: none;
+  font-size: 14px;
+}
+.lang-dropdown a:hover { background: #f5f5f5; }
+.lang-dropdown a.active { font-weight: 600; }
+.lang-dropdown.is-open { display: block; }
