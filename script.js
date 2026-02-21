@@ -286,3 +286,16 @@
 
   updateArrows();
 })();
+(function() {
+  var langBtn = document.getElementById('lang-btn');
+  var langDropdown = document.getElementById('lang-dropdown');
+
+  langBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    langDropdown.classList.toggle('is-open');
+  });
+
+  document.addEventListener('click', function() {
+    langDropdown.classList.remove('is-open');
+  });
+})();
